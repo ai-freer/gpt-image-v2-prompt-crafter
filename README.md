@@ -86,7 +86,7 @@ This skill covers the following core prompt categories by default:
 1. **产品 / SaaS / 官网 Hero**  
    Product / SaaS / website hero
 2. **App UI / 功能界面**  
-   App UI / product interface
+   App UI / product interface（split into Home / List / Detail subtypes）
 3. **叙事插画 / 电影感场景**  
    Narrative illustration / cinematic scene
 4. **角色主视觉 / 海报**  

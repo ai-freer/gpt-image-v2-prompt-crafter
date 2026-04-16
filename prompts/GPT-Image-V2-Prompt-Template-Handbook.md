@@ -177,60 +177,84 @@ Generate an image: {
 
 ### 2）App UI / 功能界面模板
 
+> 重要补充：Mobile App 不应默认做成高密度 dashboard。
+> 更合理的方向通常是 **移动优先、低信息密度、清晰单屏层级**。
+
 ```md
 Generate an image: {
   "meta": {
-    "style_name": "high-fidelity app interface visual",
-    "goal": "Generate a polished product interface scene with strong feature clarity, readable text, and realistic UI composition."
+    "style_name": "high-fidelity mobile app UI with mobile-first hierarchy",
+    "goal": "Generate a polished mobile product interface with low information density, clear hierarchy, realistic spacing, and strong mobile-native design logic."
   },
 
   "prompt": {
-    "image_type": "Mobile app UI or desktop product interface",
+    "image_type": "Mobile app UI screen",
 
     "content": {
-      "main_subject": "A specific app screen, feature workflow, or interface state.",
+      "main_subject": "A specific mobile app screen focused on one primary workflow or one clearly defined task state.",
       "secondary_elements": [
-        "Navigation bars, tabs, panels, lists, buttons, and cards",
-        "Charts, avatars, inputs, filters, toggles, or status indicators",
-        "Optional device framing if needed"
+        "A simple top header or navigation area",
+        "One main content block or primary card",
+        "One or two supporting sections only",
+        "A lightweight bottom tab bar or bottom action area if needed"
       ],
-      "environment": "The image should feel like a product design visualization rather than a lifestyle photo."
+      "environment": "The image should feel like a product design visualization centered on the mobile screen itself."
     },
 
     "composition": {
-      "layout": "Clean screen-centered composition with intuitive structure and balanced information density.",
-      "camera": "Straight-on or slightly angled interface presentation.",
-      "focus": "The feature flow and interaction logic should feel immediately understandable.",
-      "readability": "UI copy, panel grouping, and data structure should remain coherent and legible."
+      "layout": "Low-density mobile-first layout with generous whitespace, larger touch-friendly sections, and clear vertical rhythm.",
+      "camera": "Straight-on or slightly angled mobile screen presentation.",
+      "focus": "The main task, screen purpose, or primary flow should read immediately.",
+      "readability": "The screen should feel calm, realistic, and truly mobile-native rather than like a compressed desktop dashboard."
     },
 
     "visual_language": {
-      "style": "Modern interface design, elegant and system-driven.",
-      "lighting": "Soft and controlled, enough to add depth without distracting from the content.",
-      "color": "Brand-aligned or interface-oriented palette.",
-      "surface_material": "Clean digital surfaces, refined shadows, subtle elevation between layers."
+      "style": "Modern mobile product design, elegant, restrained, and system-driven.",
+      "lighting": "Soft controlled product lighting with minimal reflections.",
+      "color": "Clean app-oriented palette with restrained accents and subtle separation between sections.",
+      "surface_material": "Rounded cards, crisp typography, refined shadows, light elevation, and clean mobile UI surfaces."
     },
 
     "text_behavior": {
       "mode": "full text",
-      "guidance": "UI labels, values, buttons, and section titles should appear stable, readable, and naturally integrated."
+      "guidance": "UI labels, values, buttons, and section titles should appear stable, readable, and naturally integrated, but text density should remain appropriate for a real mobile app."
     },
 
     "quality_notes": {
-      "priority": "Prioritize interface realism, feature clarity, and typographic cleanliness.",
-      "finish": "Highly polished and presentation-ready."
+      "priority": "Prioritize mobile realism, low information density, hierarchy clarity, and polished interface design.",
+      "finish": "Highly polished and presentation-ready mobile UI visual."
     }
   },
 
   "negative_prompt": [
-    "unreadable interface text",
-    "chaotic layout",
-    "generic fake app look",
-    "overdecorated effects",
-    "broken hierarchy"
+    "desktop dashboard density",
+    "too many cards in one screen",
+    "overloaded interface",
+    "tiny unreadable sections",
+    "chaotic mobile layout",
+    "crowded data-heavy UI",
+    "complex enterprise dashboard feeling"
   ]
 } for GPT Image V2 from OpenAI's official account
 ```
+
+#### App UI 推荐再细分为 3 个子类型
+
+##### A. Home 首页型
+- 一个主卡片
+- 一到两个次级模块
+- 留白更多
+- 适合 Dashboard 首页，但要明显移动优先
+
+##### B. List 列表型
+- 任务列表、聊天列表、消息列表、收件箱、订单列表
+- 单一功能清晰
+- 更强调信息扫描效率和列表节奏
+
+##### C. Detail 详情型
+- 一个对象、一项任务、一个联系人、一个项目、一个订单的详情页
+- 信息集中但不拥挤
+- 更强调主对象和次级元信息之间的层级关系
 
 ---
 
