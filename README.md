@@ -14,7 +14,9 @@ This skill turns user image requests into high-quality, directly usable **GPT Im
 It supports two main modes:
 
 - **Quick 模式 / Quick Mode**：适合一句话需求、自然语言直出、快速得到效果很好的 prompt  
+  Best for one-line requests, natural-language prompt generation, and getting strong results quickly
 - **Precision 模式 / Precision Mode**：适合高控制、结构化、需要明确构图/镜头/版式/文字策略的场景
+  Best for high-control, structured scenarios that need explicit composition, camera, layout, and text strategy
 
 ---
 
